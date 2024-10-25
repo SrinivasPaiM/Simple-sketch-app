@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="nav">
+        <div class="clr" data-clr="#000"></div>
+        <div class="clr" data-clr="red"></div>
+        <div class="clr" data-clr="orange"></div>
+        <div class="clr" data-clr="blue"></div>
+        <div class="clr" data-clr="purple"></div>
+        <div class="clr" data-clr="yellowgreen"></div>
+        <div class="clr" data-clr="yellow"></div>
+        <div class="clr" data-clr="#fff"></div>
+        <button class="clear">Clear</button>
+        <div class="color-picker">
+            <input type="color" value="#000000" id="colorPicker" title="Choose Color">
+        </div>
+        <button class="fill">Fill</button>
+        <button class="save">Save</button>
+        <input type="range" name="brushSize" id="ageInputID" value="5" min="1" max="20" oninput="ageOutputID.value = ageInputID.value">
+        <output id="ageOutputID">5</output>
+        <div class="emoji">🎨</div>
+    </div>
+</body>
+</html>
